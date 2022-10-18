@@ -1,7 +1,8 @@
-import Test from './components/test';
+import Home from './components/home/Home';
+
 
 const App = () => {
-    return <Test />;
+    return <Home />;
 };
 
 export default App;
