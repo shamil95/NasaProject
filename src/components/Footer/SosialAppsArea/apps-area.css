@@ -1,0 +1,12 @@
+.apps-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.apps {
+    display: flex;
+}
+.apps-between-space {
+    padding: 10px;
+}
