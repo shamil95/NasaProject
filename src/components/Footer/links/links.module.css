@@ -1,22 +1,26 @@
-.links{
+.links {
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
-.links-bloks{
+
+.linksBloks {
     width: 240px;
     padding: 15px;
 }
-.links-part{
+
+.linksPart {
     display: flex;
     flex-direction: column;
 }
-h3{
+
+h3 {
     font-size: 24px;
 }
-a{
+
+a {
     text-decoration: none;
     margin-top: 20px;
     color: #a7a7b1;
-    
+
 }

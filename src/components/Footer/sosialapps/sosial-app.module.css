@@ -1,4 +1,4 @@
-.apps-container {
+.appsContainer {
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -7,6 +7,7 @@
 .apps {
     display: flex;
 }
-.apps-between-space {
+
+.appsBetweenSpace {
     padding: 10px;
 }
