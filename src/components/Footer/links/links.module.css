@@ -14,11 +14,11 @@
     flex-direction: column;
 }
 
-h3 {
-    font-size: 24px;
+.title {
+    font-size: 28px;
 }
 
-a {
+.link {
     text-decoration: none;
     margin-top: 20px;
     color: #a7a7b1;

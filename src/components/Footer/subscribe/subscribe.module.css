@@ -4,14 +4,16 @@
     align-items: center;
 }
 
-h2 {
-    font-size: 32px;
+.title {
+    font-size: 36px;
     margin-top: 46px;
+    
 }
 
 .inputArea {
     width: 495px;
     position: relative;
+    margin-top: 20px;
 }
 
 .input {
