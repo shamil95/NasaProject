@@ -1,0 +1,26 @@
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.linksBloks {
+    width: 240px;
+    padding: 15px;
+}
+
+.linksPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.link {
+    text-decoration: none;
+    margin-top: 20px;
+    color: #a7a7b1;
+
+}
