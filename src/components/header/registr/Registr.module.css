@@ -1,0 +1,19 @@
+.btn_group{
+  display: flex;
+}
+.btn_login{
+  padding: 8px 16px;
+  background: #090F20;
+  border: 1px solid #FF6D03;
+  color: #FF6D03;
+  border-radius: 12px;
+  align-items: center;
+  margin: 0 8px;
+}
+.btn_registr{
+  padding: 8px 16px;
+  background: #FF6D03;
+  border-radius: 12px;
+  align-items: center;
+  margin-right: 28px;
+}
