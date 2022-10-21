@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import Movies from '../movies/Movies';
 import styles from './Home.module.css';
 import Footer from '../Footer/Footer';
-import CartItem from '../favourites/createcard/CartItem';
+import Favourites from '../favourites/Favourites';
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             <main>
                 <Movies />
             </main>
-            <CartItem />
+            <Favourites />
             <Footer />
         </div>
     );
