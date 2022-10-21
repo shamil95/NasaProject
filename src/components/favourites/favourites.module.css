@@ -1,0 +1,11 @@
+.headTitle {
+    font-size: 56px;
+    text-align: center;
+    margin-top: 110px;
+}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+    justify-content: center;
+}
