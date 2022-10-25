@@ -1,5 +1,5 @@
 import favourite from './favouritesMock';
-import styles from './Favourites.module.css';
+import styles from './favourites.module.css';
 import { Fragment } from 'react';
 import FavouriteCard from './favoruriteCard/FavouriteCard';
 

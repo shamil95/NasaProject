@@ -6,11 +6,12 @@ import { getMovieList, removeMovieItem } from '../../redux/actions/test';
 const Movies = () => {
     const dispatch = useDispatch();
     const { data: movieList, isFetching, filters } = useSelector(state => state.movieList);
-    const { keyword } = filters;
+    const { keyword,  } = filters;
+
 
     const filteredMovieList = useMemo(() => {
         return movieList.filter(item => item.Title.toLowerCase().includes(keyword.toLowerCase()));
-    }, [keyword]);
+    }, [keyword, movieList]);
 
     useEffect(() => {
         dispatch(getMovieList());
