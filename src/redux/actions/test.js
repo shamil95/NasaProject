@@ -36,6 +36,12 @@ export const setMoviesList = payload => ({
     payload,
 });
 
+export const setFavouriteCard = (payload) => {
+    return {
+        type: SET_FAVOURITE_CARD,
+        payload
+    }
+}
 export const setMoviesFetching = payload => ({
     type: GET_MOVIE_LIST_FETCHING,
     payload,

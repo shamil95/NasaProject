@@ -1,16 +1,21 @@
-import favourite from './favouritesMock';
 import styles from './favourites.module.css';
 import { Fragment } from 'react';
-import FavouriteCard from './favoruriteCard/FavouriteCard';
+import Card from '../card/Card';
+import { useSelector } from 'react-redux';
 
 const Favourites = () => {
+    const { favouriteMovies } = useSelector(state => state.test)
     return (
         <Fragment>
             <div className={styles.headTitle}>Favourites</div>
             <div className={styles.body}>
-                {favourite.map(card => (
-                    <FavouriteCard key={card.id} card={card} />
-                ))}
+                {
+                    favouriteMovies.map(favCard=>{
+                    return(
+                        <Card key={favCard.Title} card={favCard}/>
+                    )
+                })
+              }
             </div>
         </Fragment>
     );
