@@ -1,9 +1,6 @@
 import {
-    GET_MOVIE_LIST,
-    GET_MOVIE_LIST_FETCHING,
-    MOVIE_LIST_FILTER_CHANGE,
-    REMOVE_MOVIE_ITEM,
-    SEARCH_FILTER,
+    GET_MOVIE_LIST, GET_MOVIE_LIST_FETCHING,
+    MOVIE_LIST_FILTER_CHANGE, REMOVE_MOVIE_ITEM, SET_FAVOURITE_CARD
 } from '../types';
 import axios from 'axios';
 import { getMoviesList } from '../../services/api';
@@ -31,6 +28,11 @@ export const changeMovieListFilters = filters => ({
     payload: filters,
 });
 
+export const setMoviesFetching = payload => ({
+    type: GET_MOVIE_LIST_FETCHING,
+    payload,
+});
+
 export const setMoviesList = payload => ({
     type: GET_MOVIE_LIST,
     payload,
@@ -42,12 +44,10 @@ export const setFavouriteCard = (payload) => {
         payload
     }
 }
-export const setMoviesFetching = payload => ({
-    type: GET_MOVIE_LIST_FETCHING,
-    payload,
-});
 
-export const removeMovieItem = filters => ({
-    type: REMOVE_MOVIE_ITEM,
-    payload: filters,
-});
+export const removeMovieItem = payload => {
+    return {
+        type: REMOVE_MOVIE_ITEM,
+        payload
+    }
+}

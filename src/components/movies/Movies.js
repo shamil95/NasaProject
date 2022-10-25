@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import styles from './Movies.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMovieList, removeMovieItem } from '../../redux/actions/test';
+import { getMovieList, removeMovieItem } from '../../redux/actions/movie-list';
 
 const Movies = () => {
     const dispatch = useDispatch();

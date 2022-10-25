@@ -1,4 +1,10 @@
-import { GET_MOVIE_LIST, GET_MOVIE_LIST_FETCHING, MOVIE_LIST_FILTER_CHANGE, REMOVE_MOVIE_ITEM } from '../types';
+import {
+    GET_MOVIE_LIST,
+    GET_MOVIE_LIST_FETCHING,
+    MOVIE_LIST_FILTER_CHANGE,
+    REMOVE_MOVIE_ITEM,
+    SET_FAVOURITE_CARD
+} from '../types';
 
 const initialState = {
     data: [],
@@ -6,6 +12,7 @@ const initialState = {
     filters: {
         keyword: '',
     },
+    favouriteMovies: [],
 };
 
 const movieList = (state = initialState, action) => {
@@ -35,7 +42,12 @@ const movieList = (state = initialState, action) => {
                 isFetching: payload,
             };
         }
-
+        case SET_FAVOURITE_CARD: {
+            return {
+                ...state,
+                favouriteMovies: [...state.favouriteMovies, payload],
+            }
+        }
         default:
             return state;
     }

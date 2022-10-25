@@ -4,7 +4,8 @@ import Card from '../card/Card';
 import { useSelector } from 'react-redux';
 
 const Favourites = () => {
-    const { favouriteMovies } = useSelector(state => state.test)
+    const { favouriteMovies } = useSelector(state => state.movieList)
+
     return (
         <Fragment>
             <div className={styles.headTitle}>Favourites</div>

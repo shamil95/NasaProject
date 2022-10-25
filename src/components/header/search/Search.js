@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import icon from '../../../assets/icon.svg';
 import styles from '../search/Search.module.css';
 import { useDispatch } from 'react-redux';
-import { changeMovieListFilters } from '../../../redux/actions/test';
+import { changeMovieListFilters } from '../../../redux/actions/movie-list';
 const Search = () => {
     const dispatch = useDispatch();
 
