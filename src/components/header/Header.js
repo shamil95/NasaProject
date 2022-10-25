@@ -9,17 +9,15 @@ import Search from './search/Search';
 const Header = () => {
     return (
         <div className={styles.header}>
-        <div>
-          <img src={logo}/>
-        </div>
-       <div className={styles.header}>
-       <Search/>
-       <Select/>
-       <Registr/>
-        <img src={menu}/>
-       </div>
-     
-  
+            <div>
+                <img src={logo} />
+            </div>
+            <div className={styles.header}>
+                <Search />
+                <Select />
+                <Registr />
+                <img src={menu} className={styles.menu_icon} />
+            </div>
         </div>
     );
 };
