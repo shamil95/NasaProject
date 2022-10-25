@@ -5,6 +5,7 @@ import Links from './components/Footer/links/Links';
 import Favourites from './components/favourites/Favourites';
 
 const App = () => {
+
     return (
         <Routes>
             <Route index element={<Home />} />

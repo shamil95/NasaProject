@@ -1,20 +1,20 @@
-.inputbox{
-  display: flex;
-  background-color: #0d162f;
-  border-radius: 12px;
+.inputbox {
+    display: flex;
+    background-color: #0d162f;
+    border-radius: 12px;
 }
 .input {
-  background-color: #0d162f;
-  border: none;
-  width: 280px;
-  height: 44px;
-  font-size: 16px;
- 
+    background-color: #0d162f;
+    outline: none;
+    border: none;
+    width: 280px;
+    height: 44px;
+    font-size: 16px;
+    color: #fff;
 }
 .icon {
-  background-color: #0d162f;
-  width:19px;
-  height:19px;
-  padding:12px;
-
+    background-color: #0d162f;
+    width: 19px;
+    height: 19px;
+    padding: 12px;
 }
