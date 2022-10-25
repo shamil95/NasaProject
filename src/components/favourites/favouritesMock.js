@@ -37,5 +37,5 @@ const favourite = [
         title: 'Chipotle and Intermarché  The Inglorious Fruit',
     },
 ];
-console.log(favourite);
+
 export default favourite;

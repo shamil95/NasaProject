@@ -5,6 +5,7 @@ import styles from './Home.module.css';
 import Footer from '../Footer/Footer';
 import Favourites from '../favourites/Favourites';
 
+
 const Home = () => {
     return (
         <div className={styles.container}>
